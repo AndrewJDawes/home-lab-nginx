@@ -24,6 +24,9 @@ http {
 
     keepalive_timeout  65;
 
+    # allow up to 10GB uploads
+    client_max_body_size 10000M;
+
     #gzip  on;
 
     server_names_hash_bucket_size 64;
